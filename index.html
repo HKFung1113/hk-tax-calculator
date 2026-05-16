@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>香港薪俸稅計算機 (2025/26 最新版)</title>
+    
+    <title>2026香港薪俸稅計算機 - 最新2025/26年度免費線上稅務試算工具</title>
+    <meta name="description" content="最方便的2025/26最新版香港薪俸稅計算機！支援自動計算強積金（MPF）法定供款、單身/已婚基本免稅額、子女及父母供養免稅額。自動切換累進稅率與標準稅率擇輕評稅，一鍵預估最終應繳稅款與政府寬減！">
+    <meta name="keywords" content="薪俸稅計算機, 香港稅務計算, 報稅試算, 免稅額, 強積金扣除, 2025稅率, 2026報稅, salaries tax calculator hong kong">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1541687790282612" crossorigin="anonymous"></script>
+
     <style>
         :root {
             --primary-color: #0066cc;
@@ -18,7 +24,8 @@
             margin: 0;
             padding: 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         .container {
             width: 100%;
@@ -27,6 +34,7 @@
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-sizing: border-box;
         }
         h2 {
             text-align: center;
@@ -116,21 +124,42 @@
             color: #d9534f;
             margin-top: 10px;
         }
-        .footer {
+        /* 廣告位與SEO樣式 */
+        .ads-box {
+            width: 100%;
+            max-width: 600px;
             text-align: center;
+            my-4: 15px;
+            padding: 20px 0;
+            background-color: #eee;
+            border-radius: 8px;
+            color: #666;
+            font-size: 12px;
+            margin: 15px 0;
+            border: 1px dashed #ccc;
+        }
+        .seo-footer {
+            max-width: 600px;
+            text-align: left;
             margin-top: 30px;
             font-size: 11px;
-            color: #888;
+            color: #999;
+            line-height: 1.6;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
 
+<div class="ads-box">
+    廣告贊助 / Advertisements
+</div>
+
 <div class="container">
     <h2>香港薪俸稅計算機</h2>
     <div class="subtitle">基於 2025/26 年度稅制政策</div>
     
-    <!-- 收入部分 -->
     <div class="section-title">1. 年收入與強積金</div>
     <div class="form-group">
         <label for="income">全年總收入 (HKD):</label>
@@ -148,7 +177,6 @@
         </div>
     </div>
 
-    <!-- 免稅額自選部分 -->
     <div class="section-title">2. 個人與家庭免稅額 (可多選)</div>
     
     <div class="form-group">
@@ -192,7 +220,6 @@
         </div>
     </div>
 
-    <!-- 扣除項目 -->
     <div class="section-title">3. 可扣稅項目</div>
     <div class="checkbox-group">
         <input type="checkbox" id="chkHomeLoan" onchange="toggleSubInput('chkHomeLoan', 'divHomeLoan')">
@@ -205,7 +232,6 @@
 
     <button onclick="calculateTax()">開始計算</button>
 
-    <!-- 結果顯示 -->
     <div class="result-box" id="resultBox">
         <div class="result-item">
             <span>全年總收入:</span>
@@ -244,6 +270,15 @@
     <div class="footer">
         © 2026 香港實用稅務工具. 免責聲明：計算結果僅供參考，實際稅額以稅務局評稅通知書為準。
     </div>
+</div>
+
+<div class="ads-box">
+    廣告贊助 / Advertisements
+</div>
+
+<div class="seo-footer">
+    <p>關於「香港薪俸稅計算機 / HK Salaries Tax Calculator」：本線上稅務試算工具嚴格依據香港稅務局 2025/2026 年度的最新稅制政策設計。旨在為香港僱員、打工仔、斜槓族及已婚家庭提供精確、快速且完全免費的報稅預估服務。</p>
+    <p>核心優化功能：精準試算基本免稅額、已婚免稅額、子女免稅額、供養父母及祖父母免稅額（包含全年同住額外寬免）。系統會自動依據您的入息淨額，智慧比對「累進稅率」與「標準稅率」，採取擇輕評稅原則，並將財政預算案中的政府稅款寬減扣除額（100%上限$3,000）納入計算，讓您一鍵即可掌握最真實的應繳稅款、強積金（MPF）扣除上限及居所貸款利息扣除，是您年度稅務規劃的最佳助手。</p>
 </div>
 
 <script>
